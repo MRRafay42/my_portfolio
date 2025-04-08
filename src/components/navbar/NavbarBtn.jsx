@@ -5,7 +5,7 @@ const NavbarBtn = () => {
   // Function to handle resume download
   const handleDownloadResume = () => {
     // Path relative to the public folder
-    const resumeUrl = "/public/resume/Resume.pdf";
+    const resumeUrl = "/src/assets/resume/Resume.pdf";
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "MRafay_Resume.pdf"; // The filename for download
