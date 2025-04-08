@@ -2,27 +2,30 @@ import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import Imagerealstate from "../../assets/project1.png";
+import Imagevg from "../../assets/project2.png";
+import Imagefood from "../../assets/project3.png";
 
 const projects = [
   {
     name: "Real state",
     year: "Mar2023",
     align: "right",
-    image: "../../public/images/project1.png",
+    image: Imagerealstate,
     link: "#",
   },
   {
     name: "Vgreen website",
     year: "July2023",
     align: "left",
-    image: "../../public/images/project2.png",
+    image: Imagevg,
     link: "#",
   },
   {
     name: "Restaurant Order App",
     year: "Jan 2024",
     align: "right",
-    image: "../../public/images/project3.png",
+    image: Imagefood,
     link: "#",
   },
 ];
