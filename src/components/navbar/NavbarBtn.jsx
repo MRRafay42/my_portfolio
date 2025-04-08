@@ -1,20 +1,14 @@
 import { Link } from "react-scroll";
 import { LuArrowDownRight, LuDownload } from "react-icons/lu";
+import resumePdf from "../../assets/resume/Resume.pdf";
 
 const NavbarBtn = () => {
-  // Function to handle resume download with proper filename
+  // Function to handle resume download
   const handleDownloadResume = () => {
-    // Path to your resume in public folder
-    const resumeUrl = "/resume/Resume.pdf";
-
-    // Create a temporary anchor element
+    // Use the imported file
     const link = document.createElement("a");
-    link.href = resumeUrl;
-
-    // Set the desired download filename
-    link.download = "MR_Rafay_Resume.pdf"; // This will force the browser to use this filename
-
-    // Trigger the download
+    link.href = resumePdf;
+    link.download = "MRafay_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
